@@ -4,12 +4,7 @@
 /// Liefert den Namen des Teams, das das Spiel gewonnen hat.
 /// Bei einem Unentschieden wird "draw" geliefert.
 std::string Game::result() {
-  if (home_score > guest_score) {
-    return home;
-  }
-  if (home_score == guest_score) {
-    return "draw";
-  }
+  // TODO
   return guest;
 }
 

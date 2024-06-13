@@ -10,11 +10,7 @@
 std::vector<std::string> filter_prefix(std::vector<std::string> v,
                                        std::string s) {
   std::vector<std::string> result;
-  for (int i = 0; i < v.size(); i++) {
-    if (v[i].find(s) == 0) {
-      result.push_back(v[i]);
-    }
-  }
+  // TODO
   return result;
 }
 

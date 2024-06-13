@@ -10,26 +10,7 @@ std::vector<std::string> table(std::vector<Game> games) {
   std::vector<int> points;
   std::vector<int> diffs;
 
-  for (std::string t : teams) {
-    points.push_back(add_points(games, t));
-    diffs.push_back(goal_diff(games, t));
-  }
-
-  for (int i = 0; i < teams.size(); i++) {
-    for (int j = i; j < teams.size() - 1; j++) {
-      std::string t1 = teams[j];
-      std::string t2 = teams[j + 1];
-      int p1 = points[j];
-      int p2 = points[j + 1];
-      int d1 = diffs[j];
-      int d2 = diffs[j + 1];
-      if (compare_teams(t2, t1, p2, p1, d2, d1)) {
-        std::swap(teams[j], teams[j + 1]);
-        std::swap(points[j], points[j + 1]);
-        std::swap(diffs[j], diffs[j + 1]);
-      }
-    }
-  }
+  // TODO
   return teams;
 }
 
@@ -39,23 +20,14 @@ std::vector<std::string> table(std::vector<Game> games) {
 /// steht, ansonsten false.
 bool compare_teams(std::string team1, std::string team2, int points1,
                    int points2, int diff1, int diff2) {
-  if (points1 > points2) {
-    return true;
-  }
-  if (points1 == points2) {
-    return diff1 > diff2;
-  }
+  // TODO
   return false;
 }
 
 /// Hilfsfunktion: Erwartet einen Vector mit Strings sowie einen String.
 /// Liefert true, wenn der String im Vector enthalten ist, und false sonst.
 bool contains(std::vector<std::string> vec, std::string str) {
-  for (std::string s : vec) {
-    if (s == str) {
-      return true;
-    }
-  }
+  // TODO
   return false;
 }
 
@@ -64,14 +36,7 @@ bool contains(std::vector<std::string> vec, std::string str) {
 /// vorkommen.
 std::vector<std::string> playing_teams(std::vector<Game> games) {
   std::vector<std::string> result;
-  for (Game g : games) {
-    if (!contains(result, g.home)) {
-      result.push_back(g.home);
-    }
-    if (!contains(result, g.guest)) {
-      result.push_back(g.guest);
-    }
-  }
+  // TODO
   return result;
 }
 

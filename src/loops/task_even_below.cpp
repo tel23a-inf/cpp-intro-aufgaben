@@ -6,9 +6,7 @@
 /// Liefert eine Liste mit allen geraden Zahlen, die kleiner als n sind.
 std::vector<int> even_below(int limit) {
   std::vector<int> result;
-  for (int i = 0; i < limit; i += 2) {
-    result.push_back(i);
-  }
+  // TODO
   return result;
 }
 

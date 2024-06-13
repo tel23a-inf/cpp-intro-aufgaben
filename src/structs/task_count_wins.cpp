@@ -5,11 +5,7 @@
 /// Liefert zurück, wie oft das Team gewonnen hat.
 int count_wins(std::vector<Game> games, std::string team) {
   int result = 0;
-  for (Game g : games) {
-    if (g.result() == team) {
-      result++;
-    }
-  }
+  // TODO
   return result;
 }
 

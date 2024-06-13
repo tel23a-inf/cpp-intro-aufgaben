@@ -5,16 +5,7 @@
 /// Liefert zurück, wie viele Punkte das Team gesammelt hat.
 int add_points(std::vector<Game> games, std::string team) {
   int result = 0;
-  for (Game g : games) {
-    if (g.result() == team) {
-      result += 3;
-    }
-    if (g.result() == "draw") {
-      if (g.home == team || g.guest == team) {
-        result++;
-      }
-    }
-  }
+  // TODO
   return result;
 }
 

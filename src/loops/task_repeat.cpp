@@ -6,9 +6,7 @@
 /// Liefert eine Liste, in der n count-mal wiederholt wird.
 std::vector<int> repeat(int n, int count) {
   std::vector<int> result;
-  for (int i = 0; i < count; i++) {
-    result.push_back(n);
-  }
+  // TODO
   return result;
 }
 
