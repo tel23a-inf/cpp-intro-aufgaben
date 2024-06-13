@@ -34,6 +34,22 @@ das eine Spielpaarung repräsentiert.
 Die Aufgaben dazu bauen aufeinander auf und haben das Ziel,
 eine einfache Tabellenberechnung für eine Liga bzw. einTurnier zu implementieren.
 
+## Voraussetzungen
+
+Um die Aufgaben in diesem Repo zu bearbeiten, benötigen Sie:
+
+* Einen C++-Compiler, z.B. `g++`, `clang++` oder Visual Studio (unter Windows)
+* CMake als Build-System.
+  * Unter Windows ist es am einfachsten, wenn Sie Visual Studio installieren.
+    Selbst wenn Sie dann VsCode verwenden, können Sie den Visual-Studio-Compiler verwenden.
+    Alternativ können Sie auch `mingw` oder `msys2` verwenden.
+  * Unter MacOS können Sie `clang` verwenden, wenn Sie XCode installiert haben.
+  * Unter Linux können Sie meist direkt `g++` verwenden.
+    Die genauen Installationsanweisungen hängen von Ihrer Distribution ab,
+    unter Ubuntu/Debian können Sie z.B. `sudo apt install build-essential` verwenden.
+    Falls Sie Linux verwenden, kennen Sie sich vermutlich schon aus.
+    Bei Bedarf kann ich aber auch Support geben.
+
 ## Anmerkungen / Disclaimer
 
 Die Aufgaben in diesem Repo sind mit dem Ziel entworfen,
