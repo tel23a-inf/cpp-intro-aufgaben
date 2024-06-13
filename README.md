@@ -33,3 +33,20 @@ In diesem Verzeichnis wird ein einfaches Struct `Game` vorgegeben,
 das eine Spielpaarung repräsentiert.
 Die Aufgaben dazu bauen aufeinander auf und haben das Ziel,
 eine einfache Tabellenberechnung für eine Liga bzw. einTurnier zu implementieren.
+
+## Anmerkungen / Disclaimer
+
+Die Aufgaben in diesem Repo sind mit dem Ziel entworfen,
+dass sie möglichst einfach zu bearbeiten sind.
+Deswegen ist z.B. jede Aufgabe in einer eigenen Datei,
+sogar im Fall des `Game`-Structs, wo es mehrere Funktionen gibt.
+
+Dies keine Struktur, die man in einem realistischen Projekt verwenden würde.
+Hier würde man den Code in Modulen organisieren, die zusammengehörige Funktionen enthalten.
+Jedes Modul kann aber mehrere Funktionen enthalten.
+Insbesondere Implementierungen von Structs/Klassen würde man in der Regel in einer Datei zusammenfassen.
+Außerdem würde man auch konsequent Header-Dateien verwenden.
+
+* **Dieses Projekt sollte daher nicht als allgemeine Kopiervorlage für C++-Projekte verwendet werden.**
+* Es ist aber durchaus als Anschauung geeignet, um einzelne technische Details nachzuschauen,
+  bspw. wie man mit CMake ein C++-Projekt aufsetzt, das Tests enthält.
